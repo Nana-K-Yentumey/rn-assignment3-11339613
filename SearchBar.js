@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, TextInput, View, Keyboard, Button } from "react-native";
+import { StyleSheet, TextInput, View, Image, } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 const SearchBar = () => {
@@ -20,6 +20,8 @@ const SearchBar = () => {
           placeholder="Search"
         />
       </View>
+
+      <Image style={styles.filterIcon} source={require('./assets/Filter.png')}/>
    
     </View>
   );
@@ -50,4 +52,8 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     width: "90%",
   },
+
+  filterIcon: {
+    marginLeft: 27,
+  }
 });

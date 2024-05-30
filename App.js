@@ -17,10 +17,10 @@ export default function App() {
         <Image style={styles.personIcon} source={require('./assets/personIcon.png')} />
       </View>
 
-      <View style={styles.part2}>
-        <View style={styles.searchBar}>
+      <View style={styles.part1}>
+        
         <SearchBar />
-        </View>
+        
       </View>
 
       
@@ -82,4 +82,5 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginLeft: "10%",
   },
+
 });
