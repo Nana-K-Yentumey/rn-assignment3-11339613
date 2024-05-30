@@ -1,9 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, } from "react-native"; 
+import SearchBar from './SearchBar';
+
 
 export default function App() {
+
   return (
     <View style={styles.page}>
+
       <View style={styles.part1}>
         <View style={styles.helloSection}>
           <Text style={styles.helloText}>Hello, Devs</Text>
@@ -12,6 +16,13 @@ export default function App() {
         <Image style={styles.whiteCircle} source={require('./assets/whiteCircle.png')} />
         <Image style={styles.personIcon} source={require('./assets/personIcon.png')} />
       </View>
+
+      <View style={styles.part2}>
+        <View style={styles.searchBar}>
+        <SearchBar />
+        </View>
+      </View>
+
       
       <StatusBar style="auto" />
     </View>
@@ -57,5 +68,18 @@ const styles = StyleSheet.create({
     marginTop: 72,
     marginLeft: 290,
     position: 'absolute',
+  },
+
+  root: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  title: {
+    width: "100%",
+    marginTop: 20,
+    fontSize: 25,
+    fontWeight: "bold",
+    marginLeft: "10%",
   },
 });
