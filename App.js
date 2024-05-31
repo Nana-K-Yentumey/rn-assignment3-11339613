@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, } from "react-native"; 
 import SearchBar from './SearchBar';
+import Categories from './Categories';
 
 
 export default function App() {
@@ -18,9 +19,11 @@ export default function App() {
       </View>
 
       <View style={styles.part1}>
-        
         <SearchBar />
-        
+      </View>
+
+      <View>
+        <Categories />
       </View>
 
       
@@ -46,17 +49,17 @@ const styles = StyleSheet.create({
 },
 
   helloText: {
-    fontSize: 27,
+    fontSize: 32,
     fontWeight: 'bold',
   },
 
   taskText: {
-    fontSize: 10,
+    fontSize: 12,
   },
 
   whiteCircle: {
     width: 50,
-    height: 50,
+    height: 52,
     marginTop: 70,
     marginLeft: 285,
     position: 'absolute',
