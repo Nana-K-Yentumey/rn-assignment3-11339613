@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, Image, ScrollView, FlatList } from "react-nativ
 
 const Categories = () => {
     return (
-        <ScrollView>
         <View style={styles.container}>
+            <ScrollView>
             <Text style={styles.Categories}>Categories</Text>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.cardsSection}>
                 <View style={styles.card}>
@@ -49,8 +49,9 @@ const Categories = () => {
                     <Image style={styles.cardIcon} source={require('./assets/cooking.png')} />
                 </View>
             </ScrollView>
+            </ScrollView>
         </View>
-        </ScrollView>
+
     );
 
 }
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
     },
 
     card: {
-        backgroundColor: 'white',
+        backgroundColor: '#FBF9F7',
         marginRight: 35,
         borderRadius: 10,
         padding: 10,
