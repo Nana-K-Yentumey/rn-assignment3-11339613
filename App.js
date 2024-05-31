@@ -125,21 +125,17 @@ const styles = StyleSheet.create({
     paddingTop: 50,
     paddingBottom: 50,
     paddingLeft: 20,
-    fontSize: 18,
+    fontSize: 16,
+    fontWeight: 'bold',
     backgroundColor: '#FBF9F7',
     marginLeft: 30,
     marginRight: 30,
     marginBottom: 15,
     borderRadius: 10,
-    outlineStyle: 'Solid',
-    outlineColor: '#E8D1BA',
+    borderColor: "#E8D1BA",
+    borderWidth: 1,
     
   },
   
-  list: {
-    borderRadius: 10,
-    outlineStyle: 'Solid',
-    outlineColor: '#E8D1BA',
-  }
 
 });
