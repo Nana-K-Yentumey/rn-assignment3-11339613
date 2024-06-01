@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, FlatList, ScrollView } from "react-native"; 
+import { StyleSheet, Text, View, Image, FlatList, ScrollView, Button } from "react-native"; 
 import SearchBar from './SearchBar';
 import Categories from './Categories';
 
@@ -14,17 +14,16 @@ export default function App() {
           <Text style={styles.helloText}>Hello, Devs</Text>
           <Text style={styles.taskText}>14 Tasks Today</Text>
         </View>
-        <Image style={styles.whiteCircle} source={require('./assets/whiteCircle.png')} />
-        <Image style={styles.personIcon} source={require('./assets/personIcon.png')} />
+        <Image style={styles.profile} source={require('./assets/profileImage.png')} /> 
       </View>
 
-      <View style={styles.part1}>
+      <View>
         <SearchBar />
       </View>
       <ScrollView>
-      <View>
+    
         <Categories />
-      </View>
+    
 
       <View style={styles.container}>
 
@@ -51,6 +50,9 @@ export default function App() {
         renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
       />
     </View>
+
+    <Button title='Add a new task'></Button>
+
 
     </ScrollView>
       <StatusBar style="auto" />
@@ -84,19 +86,9 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
 
-  whiteCircle: {
-    width: 50,
-    height: 52,
-    marginTop: 70,
-    marginLeft: 285,
-    position: 'absolute',
-  },
-
-  personIcon: {
-    width: 40,
-    height: 40,
+  profile: {
     marginTop: 72,
-    marginLeft: 290,
+    marginLeft: 285,
     position: 'absolute',
   },
 

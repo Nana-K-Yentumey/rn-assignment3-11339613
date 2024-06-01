@@ -1,20 +1,19 @@
 import React from "react";
-import { StyleSheet, TextInput, View, Image, } from "react-native";
+import { StyleSheet, TextInput, View, Image, Button } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 const SearchBar = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.searchBar__unclicked}
-      >
-        {/* search Icon */}
+      <View style={styles.searchB}>
+
         <Feather
           name="search"
           size={20}
           color="black"
           style={{ marginLeft: 1 }}
         />
-        {/* Input field */}
+
         <TextInput
           style={styles.input}
           placeholder="Search"
@@ -38,7 +37,7 @@ const styles = StyleSheet.create({
     width: "70%",
 
   },
-  searchBar__unclicked: {
+  searchB: {
     padding: 10,
     flexDirection: "row",
     width: "95%",

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Image, ScrollView, FlatList } from "react-nativ
 const Categories = () => {
     return (
         <View style={styles.container}>
-            <ScrollView>
+            
             <Text style={styles.Categories}>Categories</Text>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.cardsSection}>
                 <View style={styles.card}>
@@ -49,7 +49,7 @@ const Categories = () => {
                     <Image style={styles.cardIcon} source={require('./assets/cooking.png')} />
                 </View>
             </ScrollView>
-            </ScrollView>
+        
         </View>
 
     );
@@ -62,7 +62,6 @@ const styles = StyleSheet.create({
     container: {
       margin: 18,
       justifyContent: "flex-start",
-      width: "70%",
       flex: 1,
   
     },
@@ -75,22 +74,18 @@ const styles = StyleSheet.create({
 
     },
 
-    cardsSection: {
-        margin: 10,
-
-    },
 
     card: {
         backgroundColor: '#FBF9F7',
-        marginRight: 35,
-        borderRadius: 10,
-        padding: 10,
+        marginRight: 25,
+        borderRadius: 20,
+        padding: 5,
         
     },
 
     cardIcon: {
-        width: 151,
-        height: 132,
+        width: 131,
+        height: 112,
         margin: 20,
         padding: 90,
     },
