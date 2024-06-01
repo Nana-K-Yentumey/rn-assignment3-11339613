@@ -1,9 +1,9 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, ScrollView, FlatList } from "react-native";
+import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 
 const Categories = () => {
     return (
-        <View style={styles.container}>
+        <View>
             
             <Text style={styles.Categories}>Categories</Text>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.cardsSection}>
@@ -59,12 +59,6 @@ const Categories = () => {
 export default Categories;
 
 const styles = StyleSheet.create({
-    container: {
-      margin: 18,
-      justifyContent: "flex-start",
-      flex: 1,
-  
-    },
 
     Categories: {
 
@@ -77,7 +71,8 @@ const styles = StyleSheet.create({
 
     card: {
         backgroundColor: '#FBF9F7',
-        marginRight: 25,
+        marginRight: 15,
+        marginLeft: 20,
         borderRadius: 20,
         padding: 5,
         
