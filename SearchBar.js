@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, TextInput, View, Image, Button } from "react-native";
+import { StyleSheet, TextInput, View, Image } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 const SearchBar = () => {
